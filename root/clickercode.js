@@ -13,7 +13,7 @@ $(document).ready(function(e) {
       e.preventDefault();
       bones.push($(this).attr('class'));
 //       $('.selection p').html($(this).attr('class'));
-      $('.selection p').innerHTML = bones;
+//       $('.selection p').innerHTML = bones;
     });
   
     $(document).on('click', function(e) {
