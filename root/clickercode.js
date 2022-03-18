@@ -23,6 +23,4 @@ $(document).ready(function(e) {
       }  
     });
     
-  
-    
 });
