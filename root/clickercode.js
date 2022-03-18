@@ -4,7 +4,7 @@
 // * made responsive with
 // https://github.com/stowball/jQuery-rwdImageMaps
 
-const bones = [];
+const bones = ["b1", "b2];
 
 $(document).ready(function(e) {
     $('img[usemap]').rwdImageMaps();
@@ -13,7 +13,7 @@ $(document).ready(function(e) {
       e.preventDefault();
       bones.push($(this).attr('class'));
 //       $('.selection p').html($(this).attr('class'));
-//       $('.selection p').innerHTML = bones;
+      $('.selection p').innerHTML = bones;
     });
   
     $(document).on('click', function(e) {
