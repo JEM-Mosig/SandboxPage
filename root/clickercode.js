@@ -5,7 +5,7 @@
 // https://github.com/stowball/jQuery-rwdImageMaps
 
 function addbone(bonename) {
-  var completelist= document.getElementById("bonelist");
+  var completelist= $(document).getElementById("bonelist");
   counter++;
   completelist.innerHTML += "<li>Bone " + bonename + "</li>";
 }
