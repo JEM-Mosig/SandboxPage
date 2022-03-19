@@ -4,6 +4,16 @@
 
 <script language="JavaScript" type="text/javascript" src='https://jem-mosig.github.io/SandboxPage/root/clickercode.js'></script>
 
+<script>
+var counter= 0;
+
+function addelement() {
+  var completelist= document.getElementById("bonelist");
+  counter++;
+  completelist.innerHTML += "<li>Item " + counter + "</li>";
+}
+</script>
+
 <link rel="stylesheet" href="https://jem-mosig.github.io/SandboxPage/root/clickercss.css">
 
 <div class="container">
@@ -29,6 +39,6 @@
   <p>click a brick</p>
 </div>
 
-<div class="bonelist" id="bonelist">
-  Bone List
-</div>
+<ul id="bonelist">
+  
+</ul>
