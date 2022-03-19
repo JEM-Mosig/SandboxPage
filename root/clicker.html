@@ -2,8 +2,6 @@
 <script language="JavaScript" type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script language="JavaScript" type="text/javascript" src='https://res.cloudinary.com/positionrelativ/raw/upload/v1492377595/jquery.rwdImageMaps_lq5sye.js'></script>
 
-<script language="JavaScript" type="text/javascript" src='https://jem-mosig.github.io/SandboxPage/root/clickercode.js'></script>
-
 <script>
 var counter= 0;
 
@@ -12,6 +10,14 @@ function addelement() {
   counter++;
   completelist.innerHTML += "<li>Item " + counter + "</li>";
 }
+  
+$('area').on('focus', function(e) {
+  e.preventDefault();
+  $('.selection p').html($(this).attr('class'));
+
+  var completelist= $(document).getElementById("bonelist");
+  completelist.innerHTML += "<li>Bone " + $(this).attr('class') + "</li>";
+});
 </script>
 
 <link rel="stylesheet" href="https://jem-mosig.github.io/SandboxPage/root/clickercss.css">
