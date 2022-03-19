@@ -10,13 +10,16 @@ function addelement() {
   counter++;
   completelist.innerHTML += "<li>Item " + counter + "</li>";
 }
-  
-$('area').on('focus', function(e) {
-  e.preventDefault();
-  $('.selection p').html($(this).attr('class'));
 
-  var completelist= $(document).getElementById("bonelist");
-  completelist.innerHTML += "<li>Bone " + $(this).attr('class') + "</li>";
+$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+    $('area').on('focus', function(e) {
+      e.preventDefault();
+      $('.selection p').html($(this).attr('class'));
+
+      var completelist= $(document).getElementById("bonelist");
+      completelist.innerHTML += "<li>Bone " + $(this).attr('class') + "</li>";
+    });
 });
 </script>
 
