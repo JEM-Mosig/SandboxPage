@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto Slab', serif;
-  text-align: center;  
+  text-align: center;
   font-weight: bold;
   font-size: 8vw;
   background-color: #b1adde;
@@ -23,8 +23,8 @@ img[usemap] {
   height: auto;
   max-width: 100%;
   width: auto;
-}  
+}
 
 p {
-  margin: 0;  
+  margin: 0;
 }
