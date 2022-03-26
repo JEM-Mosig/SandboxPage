@@ -11,10 +11,9 @@
 
         $('area').on('focus', function(e) {
             e.preventDefault();
-            $('.selection p').html($(this).attr('class'));
+
             bones.push($(this).attr('class'));
-            var completelist= $(document).getElementById("bonelist");
-            completelist.innerHTML += "<li>Bones: " + $(bones) + "</li>";
+            $('.selection p').html(bones);
         });
 
         $(document).on('click', function(e) {
