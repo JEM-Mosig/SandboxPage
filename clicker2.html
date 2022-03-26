@@ -3,6 +3,9 @@
 <script language="JavaScript" type="text/javascript" src='https://res.cloudinary.com/positionrelativ/raw/upload/v1492377595/jquery.rwdImageMaps_lq5sye.js'></script>
 
 <script language="JavaScript" type="text/javascript">
+
+    let bones = [];
+
     $(document).ready(function(e) {
         $('img[usemap]').rwdImageMaps();
 
@@ -11,8 +14,8 @@
             $('.selection p').html($(this).attr('class'));
 
             var completelist= $(document).getElementById("bonelist");
-            completelist.innerHTML += "<li>Bone " + $(this).attr('class') + "</li>";
-            // addbone();
+            bones.push($(this).attr('class'))
+            completelist.innerHTML += "<li>Bones: " + $(bones) + "</li>";
         });
 
         $(document).on('click', function(e) {
