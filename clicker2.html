@@ -26,16 +26,6 @@
     });
 </script>
 
-<script>
-var counter= 0;
-
-function addelement() {
-  var completelist= document.getElementById("bonelist");
-  counter++;
-  completelist.innerHTML += "<li>Item " + counter + "</li>";
-}
-</script>
-
 <link rel="stylesheet" href="https://jem-mosig.github.io/SandboxPage/root/clickercss.css">
 
 <div class="container">
@@ -53,6 +43,10 @@ function addelement() {
 
     </map>
 
+    <svg height="210" width="500">
+        <polygon class="p2" points="399,269,681,268,673,468,227,455" style="fill:lime;stroke:purple;stroke-width:1" />
+    </svg>
+
   </div>
 
 </div>
@@ -60,9 +54,5 @@ function addelement() {
 <div class="selection">
   <p>click a brick</p>
 </div>
-
-<button onclick="addelement();">Add Item</button>
-
-<ul id="bonelist">
 
 </ul>
